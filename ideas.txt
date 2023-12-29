@@ -1,0 +1,37 @@
+## exploration and pre-processing ##
+
+- describe the problem
+- describe dataset (how many drugs, 
+                    how many cell lines,
+                    how many genes in each cell line,
+                    how many combinations,
+                    mean ic50,
+                    etc)
+
+- gene expression data is RMD normalized. explain what is rmd (relative mean difference)
+
+- check nan values (there are some gene names with 'nan' values)
+- check duplicates
+- build a grid image with the chemical structures of the drugs (not all, maybe the first 50 or something...)(same thing as last year - rdkit package)
+- plot with drug frequency, and another with cell line frequency
+- plot with mean ic50 for each drug (maybe we should denormalize the ic50, for better interpretability)
+- plot with mean ic50 for each cell line tissue group (https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/Cell_Lines_Details.xlsx) (maybe we should denormalize the ic50, for better interpretability)
+- maybe analyze the drug's descriptors (like last year with rdkit package)
+
+
+## non-supervised ##
+- 2 dimensions pca
+- 3 dimensions pca
+- hierarchical clustering
+- k-means clustering (use elbow method)
+
+## baseline machine learning ##
+- general idea: 
+    3 ml models (svm, LinearRegression, GradientBoostingRegressor, AdaBoostRegressor)
+
+
+
+# deep learning ##
+- build something similar to paccmann package (https://github.com/PaccMann/paccmann_predictor_tf)
+
+
