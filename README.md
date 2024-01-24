@@ -14,13 +14,12 @@ pip install -r requirements.txt
 
 ### For conda users
 
-### For conda users
 
  Navigate to the project directory:
 
-    ```bash
+   ```bash
     cd drug_sensitivity
-    ```
+   ```
 
 
 Create a Conda environment:
