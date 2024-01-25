@@ -2,3 +2,5 @@
 data/gdsc2.pkl
 data/gene_expression.csv
 venv
+data/splits/val/x_val_cell_lines.csv
+data/splits/train/x_train_cell_lines.csv
