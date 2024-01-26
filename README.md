@@ -2,7 +2,7 @@
 
 ## Key features of the work
 
-**Dataset Description**: Genomics in Drug Sensitivity in Cancer (GDSC) is a resource for therapeutic biomarker discovery in cancer cells. It contains wet lab IC50 for 100s of drugs in 1000 cancer cell lines. In this dataset, we use **RMD normalized gene expression** for cancer lines and SMILES for drugs. **Y** is the **log normalized IC50**. This is the version 2 of GDSC, which uses improved experimental procedures.
+**<sis>Dataset Description**: Genomics in Drug Sensitivity in Cancer (GDSC) is a resource for therapeutic biomarker discovery in cancer cells. It contains wet lab IC50 for 100s of drugs in 1000 cancer cell lines. In this dataset, we use **RMD normalized gene expression** for cancer lines and SMILES for drugs. **Y** is the **log normalized IC50**. This is the version 2 of GDSC, which uses improved experimental procedures.
 
 **Task Description**: Regression. Given the gene expression of cell lines and the SMILES of drug, predict the drug sensitivity level.
 
