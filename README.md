@@ -15,7 +15,7 @@
 ## <ins>Hugging Face Spaces Demo
 We implemented a demo of the model using Hugging Face Spaces. The demo can be found [here](https://huggingface.co/spaces/paulo-seixal/drug_sensitivity). The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
 
-![Hug](data/hugging_face_spaces.png)
+![hug](data/hugging_face_spaces.png)
 
 ## Installation
 
