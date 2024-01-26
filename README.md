@@ -17,7 +17,7 @@ We implemented a demo of the model using Hugging Face Spaces. The demo can be fo
 
 ![hug](data/hugging_face_spaces.png)
 
-## Installation
+## Installation of dependencies
 
 ### For pip users
 
@@ -42,6 +42,16 @@ Create a Conda environment:
 ```bash
 conda env create -f environment.yml
 ```
+## Information about the files
+
+**<sis>[data](data):**
+**<sis>[deep_learning](deep_learning):**
+**<sis>[trained_models](trained_models)**
+**<sis>[baseline_ml](baseline_ml)**
+**<sis>[]()**
+**<sis>[]()**
+**<sis>[]()**
+**<sis>[]()**
 
 
 ## Results
