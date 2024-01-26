@@ -66,6 +66,7 @@ For deep-learning models, we based our implementation on [Delora et al., 2022](h
 | Model | RMSE | MSE | MAE | R2 |
 | --- | --- | --- | --- | --- |
 | Dense | 1.10 | 1.21 | 0.82 | 0.84 |
-| GAT | 1.14 | 1.30 | 0.86 | 0.83 |
+| GAT | 1.19 | 1.43 | 0.90 | 0.81 |
 | GCN | 2.42 | 5.87 | 1.82 | 0.23 |
 
+The best model is Dense for IC50 prediction.
