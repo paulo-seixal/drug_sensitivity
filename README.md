@@ -12,7 +12,7 @@
 
 **Fingerprint**: We used the Morgan fingerprint with radius 2 and 1024 bits for the majority of the models, expect for the GCN model and GAT model, which uses graph representation of the drug.
 
-### <ins>Hugging Face Spaces Demo
+## <ins>Hugging Face Spaces Demo
 We implemented a demo of the model using Hugging Face Spaces. The demo can be found [here](https://huggingface.co/spaces/paulo-seixal/drug_sensitivity). The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
 
 ## Installation
@@ -53,7 +53,7 @@ After hyperparameter tuning, we report the best performance of each model:
 | HistGradientBoosting Regression | 1.14 | 1.30 | 0.86 | 0.83 |
 | XGBoost | 1.09 | 1.20 | 0.82 | 0.84 |
 
-The best model is XGBoost for IC50 prediction.
+The best model is XGBoost for IC50 prediction. Used in Hugging Face Spaces Demo - Drug Sensitivity Predictor - previously mentioned.
 
 ### Shap Analysis using XGBoost
 
