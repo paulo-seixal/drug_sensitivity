@@ -4,3 +4,4 @@ data/gene_expression.csv
 venv
 data/splits/val/x_val_cell_lines.csv
 data/splits/train/x_train_cell_lines.csv
+data/splits/test/x_test_cell_lines.csv

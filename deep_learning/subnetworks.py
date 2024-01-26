@@ -1,6 +1,6 @@
 import tensorflow as tf
 from tensorflow import math
-# from deepchem.models.layers import Highway, DTNNEmbedding
+from deepchem.models.layers import Highway, DTNNEmbedding
 from tensorflow.keras.layers import AlphaDropout, Activation, Dense, Dropout, BatchNormalization, Input, Conv1D, Lambda, Concatenate, add, LSTM, Bidirectional
 from tensorflow.python.keras.layers.advanced_activations import LeakyReLU, PReLU
 from ast import literal_eval
