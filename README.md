@@ -44,21 +44,21 @@ conda env create -f environment.yml
 ```
 ## Information about the files
 
-**<sis>[data](data):** 
+**<sis>[data](data):** In this folder, you can find the data used in this project. The original data about the cell lines and drgus, as well as the metadata like the [gene expression](data/gene_expression.csv) and [cell lines information](data/cell_line_info.csv). In the sub-folder [splits](data/splits), you can find the splits used in this project used for training, validation and testing.
 
-**<sis>[deep_learning](deep_learning):**
+**<sis>[deep_learning](deep_learning):** Here you can find the implementation of the deep-learning models used in this project. The pipe line for the models implemented are: [DenseNet](deep_learning/pipeline_dense.ipynb), [GCN](deep_learning/pipeline_druggcn.ipynb) and [GAT](deep_learning/pipeline_druggat.ipynb).
 
-**<sis>[trained_models](trained_models):**
+**<sis>[trained_models](trained_models):** This folder contains the trained models for both machine learning and deep-learning models. The machine learning models are saved in the pickle format. The deep-learning models are saved in h5 format.
 
-**<sis>[baseline_ml](baseline_ml.ipynb):**
+**<sis>[baseline_ml](baseline_ml.ipynb):** This notebook contains the implementation of the baseline machine learning models. The models implemented are: Linear Regression, HistGradientBoosting Regression and XGBoost.
 
-**<sis>[data_splitting](data_splitting.ipynb):**
+**<sis>[data_splitting](data_splitting.ipynb):** This notebook contains the implementation of the data splitting. The data is split into train, validation and test sets. The files can be found in the [data/splits](data/splits) folder.
 
-**<sis>[exploration](exploration.ipynb):**
+**<sis>[exploration](exploration.ipynb):** This notebook contains the exploration of the data. This notebook is used to understand the data and the features.
 
-**<sis>[gradio](gradio.ipynb):**
+**<sis>[gradio](gradio.ipynb):** This notebook contains the implementation of the gradio demo. The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
 
-**<sis>[unsupervised](unsupervised.ipynb):**
+**<sis>[unsupervised](unsupervised.ipynb):** This notebook contains the implementation of the unsupervised learning models. The models implemented are: Clustering and PCA. 
 
 
 ## Results
