@@ -45,13 +45,13 @@ conda env create -f environment.yml
 ## Information about the files
 
 **<sis>[data](data):**
-**<sis>deep_learning(deep_learning):**
-**<sis>**
-**<sis>**
-**<sis>**
-**<sis>**
-**<sis>**
-**<sis>**
+**<sis>[deep_learning](deep_learning):**
+**<sis>[trained_models](trained_models)**
+**<sis>[baseline_ml](baseline_ml)**
+**<sis>[]()**
+**<sis>[]()**
+**<sis>[]()**
+**<sis>[]()**
 
 
 ## Results
