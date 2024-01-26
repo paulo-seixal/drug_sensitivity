@@ -12,7 +12,7 @@
 
 **Fingerprint**: We used the Morgan fingerprint with radius 2 and 1024 bits for the majority of the models, expect for the GCN model and GAT model, which uses graph representation of the drug.
 
-### Hugging Face Spaces Demo 
+### <ins>Hugging Face Spaces Demo<\ins> 
 We implemented a demo of the model using Hugging Face Spaces. The demo can be found [here](https://huggingface.co/spaces/paulo-seixal/drug_sensitivity). The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
 
 ## Installation
