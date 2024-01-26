@@ -44,7 +44,7 @@ conda env create -f environment.yml
 ```
 ## Information about the files
 
-**<sis>[data](data):** In this folder, you can find the data used in this project. The original data about the cell lines and drgus, as well as the metadata like the [gene expression](data/gene_expression.csv) and [cell lines information](data/cell_line_info.csv). In the sub-folder [splits](data/splits), you can find the splits used in this project used for training, validation and testing.
+####**<sis>[data](data):**#### In this folder, you can find the data used in this project. The original data about the cell lines and drgus, as well as the metadata like the [gene expression](data/gene_expression.csv) and [cell lines information](data/cell_line_info.csv). In the sub-folder [splits](data/splits), you can find the splits used in this project used for training, validation and testing.
 
 **<sis>[deep_learning](deep_learning):** Here you can find the implementation of the deep-learning models used in this project. The pipe line for the models implemented are: [DenseNet](deep_learning/pipeline_dense.ipynb), [GCN](deep_learning/pipeline_druggcn.ipynb) and [GAT](deep_learning/pipeline_druggat.ipynb).
 
