@@ -13,7 +13,7 @@
 **<ins>Fingerprint**: We used the Morgan fingerprint with radius 2 and 1024 bits for the majority of the models, expect for the GCN model and GAT model, which uses graph representation of the drug.
 
 ## <ins>Hugging Face Spaces Demo
-We implemented a demo of the model using Hugging Face Spaces. The demo can be found [here](https://huggingface.co/spaces/paulo-seixal/drug_sensitivity). The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
+We implemented a demo of the model using Hugging Face Spaces. The demo can be found [here](https://huggingface.co/spaces/paulo-seixal/drug_sensitivity). The demo allows users to input the drug in SMILES notation and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
 
 ![hug](data/hugging_face_spaces.png)
 
@@ -44,19 +44,19 @@ conda env create -f environment.yml
 ```
 ## File contents
 
-+ **[data](data)**: In this folder, you can find the data used in this project. The original data about the cell lines and drgus, as well as the metadata like the [gene expression](data/gene_expression.csv) and [cell lines information](data/cell_line_info.csv). In the sub-folder [splits](data/splits), you can find the splits used in this project used for training, validation and testing.
++ **[data](data)**: In this folder, you can find the data used in this project. The original data about the cell lines and drugs, as well as metadata such as the [gene expression](data/gene_expression.csv) and [cell lines information](data/cell_line_info.csv). In the sub-folder [splits](data/splits), you can find the splits used in this project for training, validation and testing.
 
-+ **<sis>[deep_learning](deep_learning):** Here you can find the implementation of the deep-learning models used in this project. The pipe line for the models implemented are: [DenseNet](deep_learning/pipeline_dense.ipynb), [GCN](deep_learning/pipeline_druggcn.ipynb) and [GAT](deep_learning/pipeline_druggat.ipynb).
++ **<sis>[deep_learning](deep_learning):** Here you can find the implementation of the deep learning models used in this project. The pipeline for the models implemented are: [Dense](deep_learning/pipeline_dense.ipynb), [GCN](deep_learning/pipeline_druggcn.ipynb) and [GAT](deep_learning/pipeline_druggat.ipynb).
 
-+ **<sis>[trained_models](trained_models):** This folder contains the trained models for both machine learning and deep-learning models. The machine learning models are saved in the pickle format. The deep-learning models are saved in h5 format.
++ **<sis>[trained_models](trained_models):** This folder contains the trained models for both machine learning and deep learning models. The machine learning models are saved in pickle format. The deep-learning models are saved in h5 format.
 
-+ **<sis>[baseline_ml](baseline_ml.ipynb):** This notebook contains the implementation of the baseline machine learning models. The models implemented are: Linear Regression, HistGradientBoosting Regression and XGBoost.
++ **<sis>[baseline_ml](baseline_ml.ipynb):** This notebook contains the implementation of the baseline machine learning models. The implemented models are: Linear Regression, HistGradientBoosting Regression and XGBoost.
 
-+ **<sis>[data_splitting](data_splitting.ipynb):** This notebook contains the implementation of the data splitting. The data is split into train, validation and test sets. The files can be found in the [data/splits](data/splits) folder.
++ **<sis>[data_splitting](data_splitting.ipynb):** This notebook contains the implementation of the data splitting. The data is split into train, validation and test sets. The files can be found in [data/splits](data/splits) folder.
 
-+ **<sis>[exploration](exploration.ipynb):** This notebook contains the exploration of the data. This notebook is used to understand the data and the features.
++ **<sis>[exploration](exploration.ipynb):** This notebook contains the data exploration. This notebook is used to understand the data and the features.
 
-+ **<sis>[gradio](gradio.ipynb):** This notebook contains the implementation of the gradio demo. The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
++ **<sis>[gradio](gradio.ipynb):** This notebook contains the implementation of the gradio demo. The demo allows users to input the drug in SMILES notation and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
 
 + **<sis>[unsupervised](unsupervised.ipynb):** This notebook contains the implementation of the unsupervised learning models.
 
@@ -78,11 +78,11 @@ The best model is XGBoost for IC50 prediction. Used in Hugging Face Spaces Demo 
 
 ![shap](data/Shap_analysis.png)
 
-In SHAP analysis, it is possible to infer that the drugs Fingerprints are the most important features for the prediction of IC50. However, only 3 cell lines (TJP1; SDC4; SLC27A5) appear in the top 20 features that contribute the most to the IC50 prediction. 
+In SHAP analysis, it is possible to infer that the drug's fingerprints are the most important features for the prediction of IC50. Only 3 genes (TJP1; SDC4; SLC27A5) appear in the top 20 features that contribute the most to the IC50 prediction. 
 
 ### Deep-learning Models
 
-For deep-learning models, we based our implementation on [Delora et al., 2022](https://github.com/BioSystemsUM/drug_response_pipeline). The model is trained for 100 epochs with early stopping patience of 10. The model is trained on a single GPU (NVIDIA GeForce RTX 3050TI).
+For deep learning models, we based our implementation on [Delora et al., 2022](https://github.com/BioSystemsUM/drug_response_pipeline). The models were trained for 100 epochs with early stopping patience of 10. Each model was trained on a single GPU (NVIDIA GeForce RTX 3050TI).
 
 | Model | RMSE | MSE | MAE | R2 |
 | --- | --- | --- | --- | --- |
