@@ -6,6 +6,9 @@
 
 **Dataset Statistics**: 92,703 pairs, 805 cancer cells and 137 drugs
 
+**Feature Reduction**: We used the gene expression data from [PACCMANN](https://academic.oup.com/nar/article/48/W1/W502/5836770). The gene expression data is reduced to 2,089 represented by the top 20 genes included in the biomolecular interaction network for each drug.
+
+**
 
 ## Installation
 
@@ -32,3 +35,32 @@ Create a Conda environment:
 ```bash
 conda env create -f environment.yml
 ```
+
+
+## Results
+
+### Baseline Machine Learning Models
+After hyperparameter tuning, we report the best performance of each model:
+
+| Model | RMSE | MSE | MAE | R2 |
+| --- | --- | --- | --- | --- |
+| Linear Regression | 1.19 | 1.41 | 0.88 | 0.81 |
+| HistGradientBoosting Regression | 1.14 | 1.30 | 0.86 | 0.83 |
+| XGBoost | 1.09 | 1.20 | 0.82 | 0.84 |
+
+The best model is XGBoost for IC50 prediction.
+
+### Shap Analysis using XGBoost
+
+![shap](data/Shap_analysis.png)
+
+### Deep-learning Models
+
+For deep-learning models, we based our implementation on [Delora et al., 2022](https://github.com/BioSystemsUM/drug_response_pipeline). The model is trained for 100 epochs with early stopping patience of 10. The model is trained on a single GPU (NVIDIA GeForce RTX 3050TI).
+
+| Model | RMSE | MSE | MAE | R2 |
+| --- | --- | --- | --- | --- |
+| Dense | 1.10 | 1.21 | 0.82 | 0.84 |
+| GAT | 1.14 | 1.30 | 0.86 | 0.83 |
+| GCN | 2.42 | 5.87 | 1.82 | 0.23 |
+
