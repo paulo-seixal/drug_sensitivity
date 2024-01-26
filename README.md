@@ -44,7 +44,7 @@ conda env create -f environment.yml
 ```
 ## Information about the files
 
-**<sis>[data](data):**
+**<sis>[data](data):** 
 
 **<sis>[deep_learning](deep_learning):**
 
@@ -54,11 +54,11 @@ conda env create -f environment.yml
 
 **<sis>[data_splitting](data_splitting.ipynb):**
 
-**<sis>[exploration]()**
+**<sis>[exploration](exploration.ipynb):**
 
-**<sis>[gradio](gradio.ipynb)**
+**<sis>[gradio](gradio.ipynb):**
 
-**<sis>[unsupervised](unsupervised.ipynb)**
+**<sis>[unsupervised](unsupervised.ipynb):**
 
 
 ## Results
