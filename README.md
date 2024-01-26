@@ -53,7 +53,7 @@ After hyperparameter tuning, we report the best performance of each model:
 | --- | --- | --- | --- | --- |
 | Linear Regression | 1.19 | 1.41 | 0.88 | 0.81 |
 | HistGradientBoosting Regression | 1.14 | 1.30 | 0.86 | 0.83 |
-| XGBoost | 1.09 | 1.20 | 0.82 | 0.84 |
+| **XGBoost** | 1.09 | 1.20 | 0.82 | 0.84 |
 
 The best model is XGBoost for IC50 prediction. Used in Hugging Face Spaces Demo - Drug Sensitivity Predictor - previously mentioned.
 
@@ -67,7 +67,7 @@ For deep-learning models, we based our implementation on [Delora et al., 2022](h
 
 | Model | RMSE | MSE | MAE | R2 |
 | --- | --- | --- | --- | --- |
-| Dense | 1.10 | 1.21 | 0.82 | 0.84 |
+| **Dense** | 1.10 | 1.21 | 0.82 | 0.84 |
 | GAT | 1.19 | 1.43 | 0.90 | 0.81 |
 | GCN | 2.42 | 5.87 | 1.82 | 0.23 |
 
