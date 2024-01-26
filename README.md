@@ -44,8 +44,8 @@ conda env create -f environment.yml
 ```
 ## Information about the files
 
-**<sis>[data](drug_sensivity/data):**
-**<sis>deep_learning:**
+**<sis>[data](data):**
+**<sis>deep_learning(deep_learning):**
 **<sis>**
 **<sis>**
 **<sis>**
