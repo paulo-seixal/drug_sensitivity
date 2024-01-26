@@ -2,15 +2,15 @@
 
 ## Key features of the work
 
-**Dataset Description**: Genomics in Drug Sensitivity in Cancer (GDSC) is a resource for therapeutic biomarker discovery in cancer cells. It contains wet lab IC50 for 100s of drugs in 1000 cancer cell lines. In this dataset, we use **RMD normalized gene expression** for cancer lines and SMILES for drugs. **Y** is the **log normalized IC50**. This is the version 2 of GDSC, which uses improved experimental procedures.
+**<ins>Dataset Description**: Genomics in Drug Sensitivity in Cancer (GDSC) is a resource for therapeutic biomarker discovery in cancer cells. It contains wet lab IC50 for 100s of drugs in 1000 cancer cell lines. In this dataset, we use **RMD normalized gene expression** for cancer lines and SMILES for drugs. **Y** is the **log normalized IC50**. This is the version 2 of GDSC, which uses improved experimental procedures.
 
-**Task Description**: Regression. Given the gene expression of cell lines and the SMILES of drug, predict the drug sensitivity level.
+**<ins>Task Description**: Regression. Given the gene expression of cell lines and the SMILES of drug, predict the drug sensitivity level.
 
-**Dataset Statistics**: 92,703 pairs, 805 cancer cells and 137 drugs
+**<ins>Dataset Statistics**: 92,703 pairs, 805 cancer cells and 137 drugs
 
-**Feature Reduction**: We used the gene expression data from [PACCMANN](https://academic.oup.com/nar/article/48/W1/W502/5836770). The gene expression data is reduced to 2,089 represented by the top 20 genes included in the biomolecular interaction network for each drug.
+**<ins>Feature Reduction**: We used the gene expression data from [PACCMANN](https://academic.oup.com/nar/article/48/W1/W502/5836770). The gene expression data is reduced to 2,089 represented by the top 20 genes included in the biomolecular interaction network for each drug.
 
-**Fingerprint**: We used the Morgan fingerprint with radius 2 and 1024 bits for the majority of the models, expect for the GCN model and GAT model, which uses graph representation of the drug.
+**<ins>Fingerprint**: We used the Morgan fingerprint with radius 2 and 1024 bits for the majority of the models, expect for the GCN model and GAT model, which uses graph representation of the drug.
 
 ## <ins>Hugging Face Spaces Demo
 We implemented a demo of the model using Hugging Face Spaces. The demo can be found [here](https://huggingface.co/spaces/paulo-seixal/drug_sensitivity). The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
