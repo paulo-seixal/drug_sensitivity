@@ -42,7 +42,7 @@ Create a Conda environment:
 ```bash
 conda env create -f environment.yml
 ```
-## Information about the files
+## File contents
 
 + **[data](data)**: In this folder, you can find the data used in this project. The original data about the cell lines and drgus, as well as the metadata like the [gene expression](data/gene_expression.csv) and [cell lines information](data/cell_line_info.csv). In the sub-folder [splits](data/splits), you can find the splits used in this project used for training, validation and testing.
 
@@ -58,7 +58,7 @@ conda env create -f environment.yml
 
 + **<sis>[gradio](gradio.ipynb):** This notebook contains the implementation of the gradio demo. The demo allows users to input the drug in SMILES and get the predicted IC50, considering all the cell lines in the GDSC2 dataset.
 
-+ **<sis>[unsupervised](unsupervised.ipynb):** This notebook contains the implementation of the unsupervised learning models. The models implemented are: Clustering and PCA. 
++ **<sis>[unsupervised](unsupervised.ipynb):** This notebook contains the implementation of the unsupervised learning models.
 
 
 ## Results
